@@ -1,36 +1,10 @@
-/********** Font **********/
-.small-text {
-    font-size: 12px;
-    font-weight: 300;
-    color: #FFFFFF;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.medium-text {
-    font-size: 14px;
-    font-weight: 400;
-    color: #FFFFFF;
-}
 
-.large-text {
-    font-size: 16px;
-    font-weight: 500;
-    color: #FFFFFF;
-}
-
-.white-text {
-    color: white;
-}
-
-.left-aligned {
-}
-
-.center-aligned {
-
-}
-
-.right-aligned {
-
-}
 
 /********** Components **********/
 header {
@@ -77,64 +51,38 @@ html, body {
 }
 
 
-/* Footer - tilføj display: flex for at få kolonner side om side */
+/********** Footer **********/
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333333;
-    border: solid;
+    background-color: #333;
+    border-top: solid 1px #555;
+    color: #fff;
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
-    padding: 20px 40px;
+    flex-wrap: wrap;        /* mobilvenlig */
+    padding: 10px 20px;     /* mindre padding */
     box-sizing: border-box;
-
 }
 
-.footer-left {
-    display: flex;
-    width: 400px;
-    height: 197px;
-    padding: 0 30px;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 10px;
-    gap: 6px;
-    flex-shrink: 0;
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    height: auto;          /* fleksibel højde */
+    gap: 5px;              /* mindre afstand mellem elementer */
 }
 
-.footer-middle {
-    display: flex;
-    width: 400px;
-    height: 197px;
-    padding: 0 30px;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    flex-shrink: 0;
-    text-align: center;
-}
-
-.footer-right {
-    display: flex;
-    width: 200px;
-    padding: 0px 30px;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 40px;
+.footer-column:last-child {
     text-align: right;
 }
 
-/* Tilføj hvid tekst */
-footer {
-    color: #FFFFFF;
+footer h4 {
+    margin: 0 0 5px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 footer p {
-    color: #FFFFFF;
-    margin: 8px;
+    margin: 4px 0;
+    font-size: 14px;
 }
 
 
