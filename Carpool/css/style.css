@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background-color: #333333;
+    background-color: #4a6b4a;
     padding: 1rem 2rem;
 }
 
@@ -34,12 +34,13 @@ nav {
 .header-right {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 #logo {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: auto;
+    display: block;
 }
 
 nav a {
@@ -53,16 +54,17 @@ nav a:hover {
 }
 
 .hero {
-    flex: 1;
-    background-image: url("../images/Carpool_Background.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     display: flex;
+    flex: 1;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 4rem 2rem;
+    padding: 10rem 2rem;
     min-height: 70vh;
     overflow: hidden;
 }
@@ -73,32 +75,36 @@ nav a:hover {
     position: relative;
 }
 
-.main-buttons {
+.buttons {
     display: flex;
-    gap: 2rem;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 1.5em;
+    margin-top: 2rem;
+    position: relative;
 }
 
 h1 {
     font-size: 3rem;
     color: #2d4a2d;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .subtitle {
     font-size: 1.2rem;
     color: #4a6b4a;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
+    margin-left: 1.5rem;
 }
 
 .subtitle strong em {
     color: #228B22;
 }
 
-.main-buttons {
+.buttons {
     display: flex;
-    gap: 2rem;
+    gap: 8rem;
+
 }
 
 .nav-button {
@@ -120,35 +126,34 @@ h1 {
 
 /********** Footer **********/
 footer {
-    background-color: #333;
-    border-top: solid 1px #555;
+    background-color: #4a6b4a;
+    border-top: solid 0.0625rem #555; /* 1px = 1/16 = 0.0625rem */
     color: #fff;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;        /* mobilvenlig */
-    padding: 10px 20px;     /* mindre padding */
+    flex-wrap: wrap;
+    padding: 0.625rem 1.25rem; /* 10px = 0.625rem, 20px = 1.25rem */
     box-sizing: border-box;
 }
 
 .footer-column {
     flex: 1;
-    min-width: 200px;
-    height: auto;          /* fleksibel højde */
-    gap: 5px;              /* mindre afstand mellem elementer */
+    min-width: 12.5rem; /* 200px = 200/16 */
+    height: auto;
+    gap: 0.3125rem; /* 5px */
 }
 
-.footer-column:last-child {
-    text-align: right;
-}
+
 
 footer h4 {
-    margin: 0 0 5px;
-    font-size: 16px;
+    margin: 0 0 0.3125rem; /* 5px */
+    font-size: 1rem; /* 16px */
     font-weight: 600;
 }
 
 footer p {
-    margin: 4px 0;
-    font-size: 14px;
+    margin: 0.25rem 0; /* 4px */
+    font-size: 0.875rem; /* 14px */
 }
+
 
