@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carpool-Bornholm</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/Carpool_Logo.png">
     <link rel="stylesheet" href="css/style.css">
@@ -9,44 +10,49 @@
 <body>
 <header>
     <nav>
-        <div class="header-left">
-            <a href="index.html"><img src="images/Carpool_Logo.png" alt="Hjem"></a> <!-- Insert logo here -->
+        <div class="header-left white-text">
+            <a href="index.html"><img id="logo" src="images/homebutton.svg" alt="Hjem"></a>
             <a href="book.html">Book</a>
             <a href="create.html">Opret</a> <!-- Find alternate name to create -->
         </div>
-        <div class="header-right">
+        <div class="header-right, white-text">
             <a href="login.html">Login / Sign up</a>
             <a href="myProfile.html">Min Profil</a>
         </div>
     </nav>
 </header>
 
+<main class="hero">
+    <div class="content">
+    </div>
 <h2>Alt gik som det skulle!</h2>
 <br>
-<h3>Gå til "Min profil" for at dine aktive kørsler</h3>
+<h3>Gå til "Min profil" for at se dine aktive kørsler</h3>
 
 
-<a href="book.html" class="nav-button">Book</a>
-<a href="create.html" class="nav-button">Opret</a>
-<br>
+</main>
 
 <footer>
-    <div class="footer-left">
-        <p>Kontaktinformation:</p>
+
+    <div class="footer-column">
+        <h4>Kontaktinformation</h4>
         <p>Email: support@carpool.dk</p>
         <p>Tlf: +45 45 45 94 94</p>
-        <p>Addresse: Sol over gudhjemvej 12, 3700, Rønne</p>
+        <p>Adresse: Sol over Gudhjemvej 12, 3700 Rønne</p>
+        <p>© 2025 Carpool Technologies Inc.</p>
     </div>
 
-    <div class="footer-middle">
-        <p>Hvordan virker det?</p>
-        <p>Carpool-Bornholm gør det nemt at dele transport med andre på øen...</p>
+    <div class="footer-column">
+        <h4>Hvordan virker det?</h4>
+        <p>Carpool-Bornholm gør det nemt at dele transport med andre på øen.</p>
+        <p>Som bruger kan du hurtigt oprette en tur eller søge efter en ledig plads – billigt og miljøvenligt.</p>
     </div>
 
-    <div class="footer-right">
-        <p>Carpool-Bornholm</p>
-        <p>Din grønne genvej til campus og fælleskab</p>
+    <div class="footer-column">
+        <h4>Carpool-Bornholm</h4>
+        <p>Din grønne genvej til campus og fællesskab</p>
     </div>
+
 </footer>
 </body>
 </html>

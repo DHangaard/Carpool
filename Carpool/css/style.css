@@ -22,6 +22,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -133,6 +134,7 @@ footer {
     flex: 1;
     padding: 0 1rem;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-start;
 }
@@ -155,6 +157,8 @@ footer {
 }
 
 footer h4 {
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 0 0.3125rem;
     font-size: 1rem;
     font-weight: 600;
@@ -163,6 +167,12 @@ footer h4 {
 footer p {
     margin: 0.25rem 0;
     font-size: 0.875rem;
+}
+
+@media (max-width: 400px) {
+    .footer-column{
+
+    }
 }
 
 
