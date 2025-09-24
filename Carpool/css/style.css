@@ -7,48 +7,113 @@
 
 
 /********** Components **********/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     background-color: #333333;
-    border: solid;
+    padding: 1rem 2rem;
+}
+
+nav {
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
-    padding: 40px;
-    box-sizing: border-box;
+    align-items: center;
 }
 
 .header-left {
     display: flex;
-    width: 407px;
-    height: 100px;
-    align-items: flex-start;
-    flex-shrink: 0;
+    align-items: center;
+    gap: 2rem;
 }
 
 .header-right {
-    width: 233px;
-    height: 23px;
-    align-items: flex-end;
-    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
-main {
-    flex: 1; /* Skubber footeren ned */
+#logo {
+    width: 60px;
+    height: 60px;
 }
 
-html, body {
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero {
+    flex: 1;
     background-image: url("../images/Carpool_Background.png");
-    background-color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 100vh;
-    height: 100%;              /* Sørg for at fylde hele højden */
-    margin: 0;                 /* Fjern default margin */
-    display: flex;             /* Brug flex layout */
-    flex-direction: column;    /* Indhold under hinanden */
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    min-height: 70vh;
+    overflow: hidden;
 }
+
+.hero-content {
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+
+.main-buttons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #2d4a2d;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #4a6b4a;
+    margin-bottom: 2rem;
+}
+
+.subtitle strong em {
+    color: #228B22;
+}
+
+.main-buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-button {
+    background-color: #4a6b4a;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.nav-button:hover {
+    background-color: #5d7e5d;
+}
+
+
+
 
 
 /********** Footer **********/
@@ -85,11 +150,3 @@ footer p {
     font-size: 14px;
 }
 
-
-/********** Images **********/
-#logo {
-    width: 150px;
-    height: 100px;
-    flex-shrink: 0;
-    aspect-ratio: 3/2;
-}
