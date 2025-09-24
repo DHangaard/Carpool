@@ -55,6 +55,8 @@ nav a:hover {
 .hero {
     flex: 1;
     background-image: url("../images/Carpool_Background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     display: flex;
     position: relative;
     flex-direction: column;
